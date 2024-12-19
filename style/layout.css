@@ -1,0 +1,16 @@
+#app {
+    display: grid;
+    grid-template-columns: 25rem 51.25rem ;
+    gap: 1.25rem;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside{
+    
+}
+
+main{
+    overflow: auto;
+}

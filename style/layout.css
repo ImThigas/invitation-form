@@ -8,7 +8,9 @@
 }
 
 aside {
-  padding: 1.25rem 0 1.25rem 1.25rem;
+  max-width: 26.25rem;
+  margin-left: auto;
+  padding: 1.25rem;
 
   & .aside-container{
     border-radius: .75rem;
@@ -19,7 +21,7 @@ aside {
   }
 
   & header{
-    padding:32px;
+    padding:2rem;
 
     & img{
         width: 2.865rem;
@@ -36,6 +38,14 @@ aside {
 }
 
 main {
+  max-width: 51.25rem;
   overflow: auto;
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 0;
+
+  & .main-container{
+    padding: 5rem 8.125rem;
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+
+  }
 }

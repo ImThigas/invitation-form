@@ -26,7 +26,7 @@
     --input-placeholder: #869198;
 
     --shape-background: #131516;
-    --shape-body: #2D3136;
+    --shape-body: #212427;
     --shape-button: #2D3136;
     --shape-hover: #383D42;
 
@@ -55,4 +55,17 @@ body{
 h1{
     font: var(--logo);
     color: var(--pink);
+}
+
+h2{
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-2{
+    flex: 2;
 }

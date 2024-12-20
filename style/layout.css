@@ -49,3 +49,12 @@ main {
 
   }
 }
+
+::-webkit-scrollbar{
+  width: 15px;
+  background-color: var(--shape-body);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--shape-button);
+}

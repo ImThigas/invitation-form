@@ -401,9 +401,13 @@
                   <label for="phone">Telefone</label>
                   <input
                     type="text"
-                    name="phone"
                     id="phone"
+                    name="phone"
+                    pattern="^\d{11}$"
+                    required
+                    maxlength="12"
                     placeholder="(99) 99999-9999"
+                    oninput="this.value = this.value.replace(/[^0-9-]/g, '')"
                   />
                 </div>
               </div>
@@ -426,7 +430,6 @@
                   >
                 </div>
                 <div class="preferences-checkbox">
-                  
                   <input
                     type="checkbox"
                     name="updates-email"
@@ -445,7 +448,10 @@
               </div>
               <div class="actions">
                 <button type="submit" name="generation" id="generation">
-                  <img src="assets/icons/ticket.svg" alt="Icone de ticket" /><span>Gerar convite</span>
+                  <img
+                    src="assets/icons/ticket.svg"
+                    alt="Icone de ticket"
+                  /><span>Gerar convite</span>
                 </button>
               </div>
             </div>

@@ -21,8 +21,6 @@
       color: var(--text-body);
       font: var(--body-sm);
 
-      &:hover,
-      &:has(input:focus),
       &:has(:checked) {
         background-color: var(--input-stroke);
         font-weight: 600;

@@ -30,5 +30,9 @@
       inset: 0;
       z-index: 1;
     }
+
+    & input:hover ~ .droparea-button{
+      background-color: var(--shape-hover);
+    } 
   }
 }

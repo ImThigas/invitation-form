@@ -341,21 +341,35 @@
                     <span class="theme-label">Claro</span>
                   </div>
                 </div>
+
                 <div class="droparea-wrapper">
                   <label for="cover-photo">Foto de capa</label>
                   <div class="droparea">
-                  <input type="file" name="cover-photo" id="cover-photo" accept="image/png, image/jpeg"/>
-                  <div class="droparea-button flex"">
-                  <img src="assets/icons/upload.svg" alt="Icone de upload">
-                  <span>Selecionar</span>
-                  </div>
+                    <input
+                      type="file"
+                      name="cover-photo"
+                      id="cover-photo"
+                      accept="image/png, image/jpeg"
+                    />
+                    <div class="droparea-button flex">
+                      <img
+                        src="assets/icons/upload.svg"
+                        alt="Icone de upload"
+                      />
+                      <span>Selecionar</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="contact-data">
-              <legend><img src="assets/icons/contact.svg" alt="Icone de contato">Dados para contato</legend>
+              <legend>
+                <img
+                  src="assets/icons/contact.svg"
+                  alt="Icone de contato"
+                />Dados para contato
+              </legend>
 
               <div class="input-wrapper">
                 <label for="name">Nome</label>
@@ -367,7 +381,7 @@
                   required
                 />
                 <div class="error">
-                  <img src="assets/icons/alert.svg" alt="Icone de alert">
+                  <img src="assets/icons/alert.svg" alt="Icone de alert" />
                   <span>Campo obrigatório</span>
                 </div>
               </div>
@@ -393,7 +407,48 @@
                   />
                 </div>
               </div>
+              <div class="line"></div>
             </fieldset>
+            <div class="preferences">
+              <div class="preferences-items">
+                <div class="preferences-checkbox">
+                  <div class="preference-image"></div>
+                  <input
+                    type="checkbox"
+                    name="terms-privacity"
+                    id="terms-privacity"
+                    checked
+                    required
+                  />
+                  <span
+                    >Li e concordo com os <strong>Termos e Condições</strong> e
+                    com a <strong>Política de Privacidade</strong></span
+                  >
+                </div>
+                <div class="preferences-checkbox">
+                  
+                  <input
+                    type="checkbox"
+                    name="updates-email"
+                    id="updates-email"
+                  />
+                  <div class="preference-image"></div>
+                  <span
+                    >Aceito receber atualizações e promoções por e-mail</span
+                  >
+                </div>
+                <div class="preferences-checkbox">
+                  <div class="preference-image"></div>
+                  <input type="checkbox" name="updates-sms" id="updates-sms" />
+                  <span>Aceito receber atualizações e promoções por SMS</span>
+                </div>
+              </div>
+              <div class="actions">
+                <button type="submit" name="generation" id="generation">
+                  <img src="assets/icons/ticket.svg" alt="Icone de ticket" /><span>Gerar convite</span>
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </main>

@@ -53,21 +53,23 @@
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="start-event">Início</label>
-                  <input
-                    type="text"
-                    name="start-event"
-                    id="start-event"
-                    placeholder="DD/MM/AAAA, --:--"
+                  <input type="text" id="start-event" name="start-event"
+                  pattern="^(?:\d{2}\/\d{2}\/\d{4}|\d{2}:\d{2})$"
+                  placeholder="DD/MM/AAAA ou --:--" oninput="this.value =
+                  this.value.replace(/[^0-9\/:]/g, '')" oninput="this.value =
+                  this.value.replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3');
+                  this.value = this.value.replace(/(\d{2})(\d{2})/, '$1:$2');"
                   />
                 </div>
 
                 <div class="input-wrapper flex-2">
                   <label for="end-event">Fim</label>
-                  <input
-                    type="text"
-                    name="end-event"
-                    id="end-event"
-                    placeholder="DD/MM/AAAA, --:--"
+                  <input type="text" id="end-event" name="end-event"
+                  pattern="^(?:\d{2}\/\d{2}\/\d{4}|\d{2}:\d{2})$"
+                  placeholder="DD/MM/AAAA ou --:--" oninput="this.value =
+                  this.value.replace(/[^0-9\/:]/g, '')" oninput="this.value =
+                  this.value.replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3');
+                  this.value = this.value.replace(/(\d{2})(\d{2})/, '$1:$2');"
                   />
                 </div>
               </div>

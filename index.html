@@ -403,12 +403,16 @@
                     type="text"
                     id="phone"
                     name="phone"
-                    pattern="^\d{11}$"
+                    pattern="^\d{11,12}$"
                     required
                     maxlength="12"
                     placeholder="(99) 99999-9999"
                     oninput="this.value = this.value.replace(/[^0-9-]/g, '')"
                   />
+                  <div class="error">
+                    <img src="assets/icons/alert.svg" alt="Icone de alert" />
+                    <span>Campo obrigatório</span>
+                  </div>
                 </div>
               </div>
               <div class="line"></div>

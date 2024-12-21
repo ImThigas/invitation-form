@@ -1,4 +1,4 @@
-# Formulário de Convite Personalizado
+# Formulário de Convite
 O Formulário de Convite é um projeto desenvolvido para permitir a personalização de convites para diferentes eventos, como festas, formaturas, casamentos e outros. O formulário coleta informações essenciais, como nome do evento, data, horário e nome dos convidados, oferecendo uma experiência intuitiva e visualmente agradável.
 
 <img src="assets/images/image-1.png" width="800px">
